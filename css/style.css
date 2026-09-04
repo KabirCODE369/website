@@ -2536,375 +2536,236 @@ input[type="range"]::-moz-range-thumb {
    MOBILE
 ============================================================ */
 
+/* ============================================================
+   MOBILE
+============================================================ */
+
 @media (max-width: 800px) {
 
     :root {
-
         --header-height: 75px;
-
     }
 
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* HEADER */
 
     .site-header {
-
-        padding:
-            0 18px;
-
+        width: 100%;
+        padding: 0 18px;
     }
-
 
     .site-logo {
-
         width: 155px;
-
+        max-width: 155px;
         max-height: 58px;
-
     }
-
 
     .desktop-nav {
-
         display: none;
-
     }
-
 
     .header-right {
-
         margin-left: auto;
-
         gap: 12px;
-
     }
-
 
     .header-cta {
-
         display: none;
-
     }
 
+    /* HERO */
 
     .hero {
-
+        width: 100%;
+        max-width: none;
+        min-width: 0;
         min-height: 650px;
-
+        height: 100svh;
+        margin: 0;
     }
 
+    .hero-video-layer,
+    .hero-overlay,
+    .hero-video {
+        width: 100%;
+        max-width: none;
+    }
 
     .hero-content {
-
-        width:
-            calc(100% - 40px);
-
+        width: calc(100% - 40px);
+        max-width: none;
         margin-left: 20px;
-
+        margin-right: 20px;
         padding-top: 160px;
-
     }
-
 
     .hero h1 {
-
+        max-width: none;
         font-size: 44px;
-
     }
-
 
     .hero-description {
-
+        max-width: 620px;
         font-size: 14px;
-
     }
-
 
     .hero-status {
-
         display: none;
-
     }
-
 
     .hero-scroll {
-
         left: 20px;
-
         bottom: 25px;
-
     }
 
+    /* GENERAL SECTIONS */
 
     .section {
-
-        padding:
-            100px 20px;
-
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        padding: 100px 20px;
     }
-
 
     .section-number {
-
         display: none;
-
     }
-
 
     .section-heading {
-
+        width: 100%;
+        max-width: none;
         margin-left: 0;
-
     }
 
+    /* THESIS */
 
     .thesis-layout {
-
+        width: 100%;
         grid-template-columns: 1fr;
-
         gap: 45px;
-
-        margin:
-            65px 0 0;
-
+        margin: 65px 0 0;
     }
 
+    .thesis-text {
+        max-width: none;
+    }
 
     .thesis-metrics {
-
         border-left: 0;
-
-        border-top:
-            1px solid var(--border);
-
+        border-top: 1px solid var(--border);
         padding-left: 0;
-
     }
 
+    /* TECHNOLOGY */
 
     .technology-grid {
-
+        width: 100%;
         grid-template-columns: 1fr;
-
-        margin:
-            60px 0 0;
-
+        margin: 60px 0 0;
     }
 
+    /* MECHANISM */
 
     .mechanism-grid {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-
-        margin:
-            60px 0 0;
-
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 60px 0 0;
     }
-
 
     .mechanism-card {
-
-        border-bottom:
-            1px solid var(--border);
-
+        border-bottom: 1px solid var(--border);
     }
-
 
     .mechanism-card:nth-child(2) {
-
         border-right: 0;
-
     }
 
+    /* SIMULATION */
 
     .simulation-section {
-
-        padding:
-            100px 12px;
-
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        padding: 100px 12px;
     }
-
 
     .simulation-heading {
-
         flex-direction: column;
-
         align-items: flex-start;
-
     }
-
 
     .simulation-warning {
-
         white-space: normal;
-
     }
-
 
     .svg-wrapper {
-
+        width: 100%;
+        max-width: 100%;
         overflow-x: auto;
-
     }
 
-
+    /*
+       Keep SVG large intentionally.
+       This is a technical visualization and should scroll
+       horizontally rather than become unreadable.
+    */
     .svg-wrapper svg {
-
         width: 900px;
-
         max-width: none;
-
         min-height: 450px;
-
     }
-
 
     .simulation-controls {
-
         display: block;
-
     }
 
+    /* ENGINEERING */
 
     .engineering-grid {
-
+        width: 100%;
         grid-template-columns: 1fr;
-
-        margin:
-            60px 0 0;
-
+        margin: 60px 0 0;
     }
-
 
     .engineering-card {
-
         border-right: 0;
-
     }
 
+    /* APPLICATIONS */
 
     .applications-grid {
-
+        width: 100%;
         grid-template-columns: 1fr;
-
-        margin:
-            60px 0 0;
-
+        margin: 60px 0 0;
     }
 
+    /* FOOTER */
 
     .footer {
-
-        flex-direction: column;
-
-    }
-
-}
-
-
-/* ============================================================
-   SMALL MOBILE
-============================================================ */
-
-@media (max-width: 480px) {
-
-    .site-logo {
-
-        width: 140px;
-
-    }
-
-
-    .language-button {
-
-        font-size: 10px;
-
-    }
-
-
-    .hero h1 {
-
-        font-size: 40px;
-
-    }
-
-
-    .hero-buttons {
-
-        flex-direction: column;
-
-    }
-
-
-    .btn {
-
         width: 100%;
-
+        flex-direction: column;
     }
-
-
-    .technology-card {
-
-        min-height: 410px;
-
-        padding: 30px;
-
-    }
-
-
-    .card-bottom {
-
-        left: 30px;
-
-        right: 30px;
-
-    }
-
-
-    .mechanism-grid {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .mechanism-card {
-
-        border-right: 0;
-
-    }
-
-}
-
-
-/* ============================================================
-   REDUCED MOTION
-============================================================ */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-
-        scroll-behavior: auto;
-
-    }
-
-
-    .reveal {
-
-        opacity: 1;
-
-        transform: none;
-
-        transition: none;
-
-    }
-
-
-    .status-light,
-    .critical-node {
-
-        animation: none;
-
-    }
-
 }
