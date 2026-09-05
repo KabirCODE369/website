@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
+
+    <!-- ============================================================
+         BASIC DOCUMENT SETTINGS
+    ============================================================ -->
 
     <meta charset="UTF-8">
 
@@ -10,17 +14,176 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <!-- ============================================================
+         PRIMARY SEO
+    ============================================================ -->
+
+    <title>
+        Regenyx Aerospace | Intelligent Aerospace Structures
+    </title>
+
     <meta
         name="description"
-        content="Regenyx Aerospace — Engineering Intelligent Structures for the Future of Flight Missions."
+        content="Regenyx Aerospace develops adaptive aerospace structures and intelligent load-routing technologies for future flight and space missions."
     >
 
-    <title>Regenyx Aerospace</title>
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    >
+
+    <meta
+        name="author"
+        content="Regenyx Aerospace"
+    >
+
+    <meta
+        name="theme-color"
+        content="#05070a"
+    >
+
+    <!-- ============================================================
+         CANONICAL URL
+    ============================================================ -->
+
+    <link
+        rel="canonical"
+        href="https://www.regenyxspace.com/"
+    >
+
+    <!-- ============================================================
+         FAVICON
+    ============================================================ -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/regenyx-logo.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="assets/images/regenyx-logo.png"
+    >
+
+    <!-- ============================================================
+         OPEN GRAPH / FACEBOOK / LINKEDIN / WHATSAPP
+    ============================================================ -->
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Regenyx Aerospace"
+    >
+
+    <meta
+        property="og:title"
+        content="Regenyx Aerospace | Intelligent Aerospace Structures"
+    >
+
+    <meta
+        property="og:description"
+        content="Regenyx Aerospace develops adaptive aerospace structures and intelligent load-routing technologies for future flight and space missions."
+    >
+
+    <meta
+        property="og:url"
+        content="https://www.regenyxspace.com/"
+    >
+
+    <meta
+        property="og:image"
+        content="https://www.regenyxspace.com/assets/images/regenyx-logo.png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Regenyx Aerospace logo"
+    >
+
+    <meta
+        property="og:locale"
+        content="en_US"
+    >
+
+    <!-- ============================================================
+         TWITTER / X
+    ============================================================ -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Regenyx Aerospace | Intelligent Aerospace Structures"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Regenyx Aerospace develops adaptive aerospace structures and intelligent load-routing technologies for future flight and space missions."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://www.regenyxspace.com/assets/images/regenyx-logo.png"
+    >
+
+    <!-- ============================================================
+         INTERNATIONAL SEO
+
+         English is currently the primary published version.
+         Additional hreflang URLs should only be added once
+         those language pages actually exist.
+    ============================================================ -->
+
+    <link
+        rel="alternate"
+        hreflang="en"
+        href="https://www.regenyxspace.com/"
+    >
+
+    <!-- ============================================================
+         STYLESHEET
+    ============================================================ -->
 
     <link
         rel="stylesheet"
         href="css/style.css"
     >
+
+    <!-- ============================================================
+         ORGANIZATION STRUCTURED DATA
+    ============================================================ -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Regenyx Aerospace",
+        "url": "https://www.regenyxspace.com/",
+        "logo": "https://www.regenyxspace.com/assets/images/regenyx-logo.png",
+        "description": "Regenyx Aerospace develops adaptive aerospace structures and intelligent load-routing technologies for future flight and space missions."
+    }
+    </script>
+
+    <!-- ============================================================
+         WEBSITE STRUCTURED DATA
+    ============================================================ -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Regenyx Aerospace",
+        "url": "https://www.regenyxspace.com/"
+    }
+    </script>
 
 </head>
 
@@ -40,13 +203,15 @@
     <a
         href="#home"
         class="logo-link"
-        aria-label="Regenyx Aerospace"
+        aria-label="Regenyx Aerospace home"
     >
 
         <img
             src="assets/images/regenyx-logo.png"
-            alt="Regenyx Aerospace"
+            alt="Regenyx Aerospace logo"
             class="site-logo"
+            width="220"
+            height="60"
         >
 
     </a>
@@ -55,21 +220,34 @@
     <nav
         class="desktop-nav"
         id="desktopNav"
+        aria-label="Main navigation"
     >
 
-        <a href="#technology" data-i18n="navTechnology">
+        <a
+            href="#technology"
+            data-i18n="navTechnology"
+        >
             Technology
         </a>
 
-        <a href="#engineering" data-i18n="navEngineering">
+        <a
+            href="#engineering"
+            data-i18n="navEngineering"
+        >
             Engineering
         </a>
 
-        <a href="#applications" data-i18n="navApplications">
+        <a
+            href="#applications"
+            data-i18n="navApplications"
+        >
             Applications
         </a>
 
-        <a href="#roadmap" data-i18n="navRoadmap">
+        <a
+            href="#roadmap"
+            data-i18n="navRoadmap"
+        >
             Roadmap
         </a>
 
@@ -78,7 +256,9 @@
 
     <div class="header-right">
 
-        <!-- LANGUAGE -->
+        <!-- ====================================================
+             LANGUAGE SELECTOR
+        ===================================================== -->
 
         <div class="language-selector">
 
@@ -87,13 +267,18 @@
                 id="languageButton"
                 type="button"
                 aria-expanded="false"
+                aria-controls="languageMenu"
+                aria-label="Select language"
             >
 
                 <span id="currentLanguage">
                     EN
                 </span>
 
-                <span class="language-arrow">
+                <span
+                    class="language-arrow"
+                    aria-hidden="true"
+                >
                     ▾
                 </span>
 
@@ -103,11 +288,13 @@
             <div
                 class="language-menu"
                 id="languageMenu"
+                role="menu"
             >
 
                 <button
                     type="button"
                     data-language="en"
+                    role="menuitem"
                 >
                     English
                 </button>
@@ -115,6 +302,7 @@
                 <button
                     type="button"
                     data-language="fr"
+                    role="menuitem"
                 >
                     Français
                 </button>
@@ -123,6 +311,10 @@
 
         </div>
 
+
+        <!-- ====================================================
+             HEADER CTA
+        ===================================================== -->
 
         <a
             href="#contact"
@@ -138,6 +330,10 @@
 
 
 
+<!-- ============================================================
+     MAIN CONTENT
+============================================================ -->
+
 <main id="home">
 
 
@@ -145,10 +341,15 @@
      HERO
 ============================================================ -->
 
-<section class="hero">
+<section
+    class="hero"
+    aria-labelledby="hero-title"
+>
 
 
-    <!-- BACKGROUND VIDEO -->
+    <!-- ========================================================
+         BACKGROUND VIDEO
+    ========================================================= -->
 
     <div class="hero-video-layer">
 
@@ -159,7 +360,8 @@
             muted
             loop
             playsinline
-            preload="auto"
+            preload="metadata"
+            aria-hidden="true"
         >
 
             <source
@@ -172,18 +374,25 @@
     </div>
 
 
-    <!-- VIDEO OVERLAY -->
+    <!-- ========================================================
+         VIDEO OVERLAY
+    ========================================================= -->
 
-    <div class="hero-overlay"></div>
+    <div
+        class="hero-overlay"
+        aria-hidden="true"
+    ></div>
 
 
-    <!-- HERO CONTENT -->
+    <!-- ========================================================
+         HERO CONTENT
+    ========================================================= -->
 
     <div class="hero-content">
 
         <div class="hero-eyebrow">
 
-            <span></span>
+            <span aria-hidden="true"></span>
 
             <strong data-i18n="heroEyebrow">
                 DEEP-TECH AEROSPACE
@@ -192,14 +401,14 @@
         </div>
 
 
-        <h1>
+        <h1 id="hero-title">
 
             <span data-i18n="heroTitle1">
                 Engineering
             </span>
 
             <em data-i18n="heroTitle2">
-                Intelligent Structures
+                Intelligent Aerospace Structures
             </em>
 
             <span data-i18n="heroTitle3">
@@ -242,11 +451,19 @@
     </div>
 
 
-    <!-- HERO STATUS -->
+    <!-- ========================================================
+         HERO STATUS
+    ========================================================= -->
 
-    <div class="hero-status">
+    <div
+        class="hero-status"
+        aria-label="Current technology status"
+    >
 
-        <span class="status-light"></span>
+        <span
+            class="status-light"
+            aria-hidden="true"
+        ></span>
 
         <span data-i18n="heroStatus">
             ADAPTIVE STRUCTURAL INTELLIGENCE
@@ -255,9 +472,14 @@
     </div>
 
 
-    <!-- SCROLL -->
+    <!-- ========================================================
+         SCROLL INDICATOR
+    ========================================================= -->
 
-    <div class="hero-scroll">
+    <div
+        class="hero-scroll"
+        aria-hidden="true"
+    >
 
         <span data-i18n="scroll">
             SCROLL TO EXPLORE
@@ -276,9 +498,15 @@
      01 — STRUCTURAL THESIS
 ============================================================ -->
 
-<section class="section thesis-section">
+<section
+    class="section thesis-section"
+    id="thesis"
+>
 
-    <div class="section-number">
+    <div
+        class="section-number"
+        aria-hidden="true"
+    >
         01
     </div>
 
@@ -324,9 +552,7 @@
             </p>
 
 
-            <p
-                data-i18n="thesisParagraph2"
-            >
+            <p data-i18n="thesisParagraph2">
                 Regenyx Aerospace explores a different paradigm:
                 structures whose architecture can respond to changing
                 mechanical states by activating alternative load paths
@@ -390,7 +616,10 @@
     id="technology"
 >
 
-    <div class="section-number">
+    <div
+        class="section-number"
+        aria-hidden="true"
+    >
         02
     </div>
 
@@ -418,9 +647,7 @@
         </h2>
 
 
-        <p
-            data-i18n="technologyIntro"
-        >
+        <p data-i18n="technologyIntro">
             Hierarchical structural architectures combined with
             state-dependent load-routing mechanisms.
         </p>
@@ -431,16 +658,24 @@
     <div class="technology-grid">
 
 
-        <!-- CAMLR -->
+        <!-- ====================================================
+             CAMLR
+        ===================================================== -->
 
         <article class="technology-card reveal">
 
-            <div class="card-number">
+            <div
+                class="card-number"
+                aria-hidden="true"
+            >
                 01
             </div>
 
 
-            <div class="technology-symbol">
+            <div
+                class="technology-symbol"
+                aria-hidden="true"
+            >
                 ↗
             </div>
 
@@ -450,19 +685,17 @@
             </h3>
 
 
-            <h4
-                data-i18n="camlrSubtitle"
-            >
+            <h4 data-i18n="camlrSubtitle">
                 Constraint-Activated Metastable
                 Load Routing Mechanism
             </h4>
 
 
-            <p
-                data-i18n="camlrDescription"
-            >
+            <p data-i18n="camlrDescription">
                 A structural mechanism in which a critical constraint
-                state activates an alternate mechanical load path.
+                state activates an alternate mechanical load path,
+                enabling adaptive redistribution of mechanical demand
+                under changing load conditions.
             </p>
 
 
@@ -472,7 +705,7 @@
                     LOAD ROUTING
                 </span>
 
-                <span>
+                <span aria-hidden="true">
                     →
                 </span>
 
@@ -482,16 +715,24 @@
 
 
 
-        <!-- PTTLR -->
+        <!-- ====================================================
+             PTTLR
+        ===================================================== -->
 
         <article class="technology-card reveal">
 
-            <div class="card-number">
+            <div
+                class="card-number"
+                aria-hidden="true"
+            >
                 02
             </div>
 
 
-            <div class="technology-symbol">
+            <div
+                class="technology-symbol"
+                aria-hidden="true"
+            >
                 ⇄
             </div>
 
@@ -501,19 +742,16 @@
             </h3>
 
 
-            <h4
-                data-i18n="pttlrSubtitle"
-            >
+            <h4 data-i18n="pttlrSubtitle">
                 Phase-Transition-Triggered
                 Load Redistribution
             </h4>
 
 
-            <p
-                data-i18n="pttlrDescription"
-            >
+            <p data-i18n="pttlrDescription">
                 A structural state transition that redistributes
-                mechanical demand across the hierarchy.
+                mechanical demand across the hierarchy, supporting
+                improved load management and structural survivability.
             </p>
 
 
@@ -523,7 +761,7 @@
                     LOAD REDISTRIBUTION
                 </span>
 
-                <span>
+                <span aria-hidden="true">
                     ⇄
                 </span>
 
@@ -542,9 +780,15 @@
      03 — MECHANISM
 ============================================================ -->
 
-<section class="section mechanism-section">
+<section
+    class="section mechanism-section"
+    id="mechanism"
+>
 
-    <div class="section-number">
+    <div
+        class="section-number"
+        aria-hidden="true"
+    >
         03
     </div>
 
@@ -579,7 +823,7 @@
 
         <article class="mechanism-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 01
             </span>
 
@@ -597,7 +841,7 @@
 
         <article class="mechanism-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 02
             </span>
 
@@ -615,7 +859,7 @@
 
         <article class="mechanism-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 03
             </span>
 
@@ -632,7 +876,7 @@
 
         <article class="mechanism-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 04
             </span>
 
@@ -658,7 +902,10 @@
      INTERACTIVE SIMULATION
 ============================================================ -->
 
-<section class="simulation-section">
+<section
+    class="simulation-section"
+    id="simulation"
+>
 
 
     <div class="simulation-heading reveal">
@@ -700,9 +947,9 @@
     <div class="simulation-layout">
 
 
-        <!-- ================================================
+        <!-- ====================================================
              VISUALIZATION
-        ================================================= -->
+        ===================================================== -->
 
         <div class="simulation-visual reveal">
 
@@ -728,8 +975,17 @@
                     id="loadVisualization"
                     viewBox="0 0 1000 560"
                     role="img"
-                    aria-label="Adaptive structural load path visualization"
+                    aria-labelledby="simulationSvgTitle simulationSvgDescription"
                 >
+
+                    <title id="simulationSvgTitle">
+                        Adaptive aerospace structural load path
+                    </title>
+
+                    <desc id="simulationSvgDescription">
+                        Conceptual visualization showing primary,
+                        CAMLR and PTTLR structural load paths.
+                    </desc>
 
 
                     <defs>
@@ -785,9 +1041,9 @@
 
 
 
-                    <!-- =========================================
+                    <!-- =================================================
                          STRUCTURAL FRAME
-                    ========================================== -->
+                    ================================================== -->
 
                     <g class="frame">
 
@@ -995,9 +1251,9 @@
 
 
 
-                    <!-- =========================================
+                    <!-- =================================================
                          ANIMATED PARTICLES
-                    ========================================== -->
+                    ================================================== -->
 
                     <g
                         id="particles"
@@ -1005,9 +1261,9 @@
                     ></g>
 
 
-                    <!-- =========================================
+                    <!-- =================================================
                          THRESHOLD MARKER
-                    ========================================== -->
+                    ================================================== -->
 
                     <line
                         x1="575"
@@ -1032,29 +1288,49 @@
             </div>
 
 
-            <!-- LEGEND -->
+            <!-- ====================================================
+                 LEGEND
+            ===================================================== -->
 
             <div class="simulation-legend">
 
                 <div>
-                    <i class="legend-primary"></i>
+
+                    <i
+                        class="legend-primary"
+                        aria-hidden="true"
+                    ></i>
+
                     <span data-i18n="legendPrimary">
                         Primary
                     </span>
+
                 </div>
 
                 <div>
-                    <i class="legend-camlr"></i>
+
+                    <i
+                        class="legend-camlr"
+                        aria-hidden="true"
+                    ></i>
+
                     <span data-i18n="legendCamlr">
                         CAMLR
                     </span>
+
                 </div>
 
                 <div>
-                    <i class="legend-pttlr"></i>
+
+                    <i
+                        class="legend-pttlr"
+                        aria-hidden="true"
+                    ></i>
+
                     <span data-i18n="legendPttlr">
                         PTTLR
                     </span>
+
                 </div>
 
             </div>
@@ -1063,9 +1339,9 @@
 
 
 
-        <!-- ================================================
+        <!-- ====================================================
              CONTROL PANEL
-        ================================================= -->
+        ===================================================== -->
 
         <aside class="simulation-controls reveal">
 
@@ -1078,7 +1354,9 @@
             </div>
 
 
-            <!-- LOAD -->
+            <!-- =================================================
+                 LOAD
+            ================================================== -->
 
             <div class="control">
 
@@ -1089,10 +1367,13 @@
                     </span>
 
                     <strong>
+
                         <span id="loadDisplay">
                             40
                         </span>
+
                         kN
+
                     </strong>
 
                 </div>
@@ -1105,6 +1386,7 @@
                     max="100"
                     value="40"
                     step="1"
+                    aria-label="Applied load"
                 >
 
 
@@ -1124,7 +1406,9 @@
 
 
 
-            <!-- THRESHOLD -->
+            <!-- =================================================
+                 THRESHOLD
+            ================================================== -->
 
             <div class="control">
 
@@ -1135,10 +1419,13 @@
                     </span>
 
                     <strong>
+
                         <span id="thresholdDisplay">
                             65
                         </span>
+
                         kN
+
                     </strong>
 
                 </div>
@@ -1151,6 +1438,7 @@
                     max="90"
                     value="65"
                     step="1"
+                    aria-label="CAMLR threshold"
                 >
 
 
@@ -1170,7 +1458,9 @@
 
 
 
-            <!-- PTTLR -->
+            <!-- =================================================
+                 PTTLR
+            ================================================== -->
 
             <div class="control">
 
@@ -1199,9 +1489,13 @@
                         <input
                             type="checkbox"
                             id="pttlrToggle"
+                            aria-label="Enable PTTLR"
                         >
 
-                        <span class="switch-slider"></span>
+                        <span
+                            class="switch-slider"
+                            aria-hidden="true"
+                        ></span>
 
                     </label>
 
@@ -1211,7 +1505,9 @@
 
 
 
-            <!-- RESET -->
+            <!-- =================================================
+                 RESET
+            ================================================== -->
 
             <button
                 id="resetButton"
@@ -1224,7 +1520,9 @@
 
 
 
-            <!-- READOUT -->
+            <!-- =================================================
+                 LIVE READOUT
+            ================================================== -->
 
             <div class="readout-section">
 
@@ -1256,9 +1554,11 @@
                     </span>
 
                     <strong>
+
                         <span id="primaryReadout">
                             100
                         </span>%
+
                     </strong>
 
                 </div>
@@ -1271,9 +1571,11 @@
                     </span>
 
                     <strong>
+
                         <span id="camlrReadout">
                             0
                         </span>%
+
                     </strong>
 
                 </div>
@@ -1286,9 +1588,11 @@
                     </span>
 
                     <strong>
+
                         <span id="pttlrReadout">
                             0
                         </span>%
+
                     </strong>
 
                 </div>
@@ -1297,7 +1601,9 @@
 
 
 
-            <!-- EVENT LOG -->
+            <!-- =================================================
+                 EVENT LOG
+            ================================================== -->
 
             <div class="event-section">
 
@@ -1313,7 +1619,7 @@
 
                     <div class="event active">
 
-                        <i></i>
+                        <i aria-hidden="true"></i>
 
                         <span data-i18n="systemInitialized">
                             SYSTEM INITIALIZED
@@ -1343,7 +1649,10 @@
     id="engineering"
 >
 
-    <div class="section-number">
+    <div
+        class="section-number"
+        aria-hidden="true"
+    >
         04
     </div>
 
@@ -1378,7 +1687,7 @@
 
         <article class="engineering-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 01
             </span>
 
@@ -1396,7 +1705,7 @@
 
         <article class="engineering-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 02
             </span>
 
@@ -1414,7 +1723,7 @@
 
         <article class="engineering-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 03
             </span>
 
@@ -1432,7 +1741,7 @@
 
         <article class="engineering-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 04
             </span>
 
@@ -1463,7 +1772,10 @@
     id="applications"
 >
 
-    <div class="section-number">
+    <div
+        class="section-number"
+        aria-hidden="true"
+    >
         05
     </div>
 
@@ -1498,7 +1810,7 @@
 
         <article class="application-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 01
             </span>
 
@@ -1516,7 +1828,7 @@
 
         <article class="application-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 02
             </span>
 
@@ -1534,7 +1846,7 @@
 
         <article class="application-card reveal">
 
-            <span>
+            <span aria-hidden="true">
                 03
             </span>
 
@@ -1565,7 +1877,10 @@
     id="roadmap"
 >
 
-    <div class="section-number">
+    <div
+        class="section-number"
+        aria-hidden="true"
+    >
         06
     </div>
 
@@ -1598,12 +1913,18 @@
     <div class="roadmap">
 
 
-        <div class="roadmap-line"></div>
+        <div
+            class="roadmap-line"
+            aria-hidden="true"
+        ></div>
 
 
         <article class="roadmap-item reveal">
 
-            <div class="roadmap-node">
+            <div
+                class="roadmap-node"
+                aria-hidden="true"
+            >
                 01
             </div>
 
@@ -1629,7 +1950,10 @@
 
         <article class="roadmap-item reveal">
 
-            <div class="roadmap-node">
+            <div
+                class="roadmap-node"
+                aria-hidden="true"
+            >
                 02
             </div>
 
@@ -1654,7 +1978,10 @@
 
         <article class="roadmap-item reveal">
 
-            <div class="roadmap-node">
+            <div
+                class="roadmap-node"
+                aria-hidden="true"
+            >
                 03
             </div>
 
@@ -1746,21 +2073,45 @@
 <footer class="footer">
 
     <div>
-        © <span id="footerYear"></span>
+
+        ©
+        <span id="footerYear"></span>
         Regenyx Aerospace
+
     </div>
 
 
     <div data-i18n="footerText">
+
         Engineering Intelligent Structures for the Future of Flight
         Missions.
+
     </div>
 
 </footer>
 
 
 
-<script src="js/main.js"></script>
+<!-- ============================================================
+     JAVASCRIPT
+     
+     IMPORTANT:
+     Your VS Code folder shows:
+     
+         website/
+         └── js/
+             └── main.js
+     
+     Therefore the correct path is js/main.js,
+     NOT jss/main.js.
+============================================================ -->
+
+<script
+    src="js/main.js"
+    defer
+></script>
+
 
 </body>
+
 </html>
